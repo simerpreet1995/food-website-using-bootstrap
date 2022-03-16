@@ -1,0 +1,21 @@
+main {
+    height: 90vh;
+    width: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.1) ,rgba(0,0,0,0.6)) ,url("./images/food.jpg");
+    
+    /* background-color: black; */
+    /* background-repeat: no-repeat; */
+    color: white;
+    background-size: ;
+}
+
+.h100{
+    height: 100%;
+    width: 100%;
+}
+
+#para{
+    font-family: 'Syne Mono', monospace;    
+    font-size: 20px;
+
+}
