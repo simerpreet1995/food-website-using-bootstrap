@@ -13,6 +13,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&family=Syne+Mono&display=swap" rel="stylesheet">
 
 
+        <!-- font awesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
         
 
 </head>
@@ -22,6 +24,8 @@
 
             <nav class="navbar navbar-expand-lg  navbar-light bg-light">
                 <div class="container-fluid">
+                  <img width="60" src="./images/food-logo.png" alt="">
+
                   <a class="navbar-brand" href="#">Foodieo</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -31,28 +35,32 @@
 
                         
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                       </li>
-                      <li class="nav-item">
+                      <!-- <li class="nav-item">
                         <a class="nav-link" href="#">About</a>
-                      </li>
+                      </li> -->
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Types of food
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                           <li><a class="dropdown-item" href="./veg-main-course.html">Veg Main Course</a></li>
+                          
+                          <li><hr class="dropdown-divider"></li>
+
+                          
                           <li><a class="dropdown-item" href="./veg-starter.html">Veg Starter</a></li>
 
-                          <li><hr class="dropdown-divider"></li>
+                          <!-- <li><hr class="dropdown-divider"></li>
 
-                          <li><a class="dropdown-item" href="#">Nov-Veg</a></li>
+                          <li><a class="dropdown-item" href="#">Nov-Veg</a></li> -->
                           <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Shakes</a></li>
+                          <li><a class="dropdown-item" href="./drinks.html">Non-Alcoholoic Drinks</a></li>
                         </ul>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Products</a>
+                        <a class="nav-link " href="./contact-us.html" tabindex="-1" aria-disabled="true">Contact Us</a>
                       </li>
                     </ul>
                     <!-- <form class="d-flex">
@@ -75,9 +83,12 @@
 
                 <div class="col-md-12  text-center">
                     <h1>Foodieo</h1>
-                    <h4>Discover the best food & drinks in Delhi NCR</h4>
-                    <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui minus dolorem vero esse adipisci iste eius cum voluptatibus commodi nostrum, a accusantium ratione! Placeat hic neque sapiente itaque, quod sed alias animi enim, impedit minima praesentium voluptates accusantium ipsum quia harum dignissimos eligendi dicta fugit debitis suscipit! Tempora, id nisi.</p>
-                    <button class="btn btn-primary">Order Now</button>
+                    
+                    <h4 id="para">Discover the best food & drinks in Delhi NCR</h4>
+                    <button class="btn btn-primary mt-5">Order Now</button>
+
+                    <h4 class="mt-5">We Have Dinning Halls, Marriage Halls & Confference Halls</h4>
+
                 </div>
 
             </div>
@@ -88,65 +99,87 @@
               <!-- main end here -->
 
               <!-- footer starts  -->
-              <footer class="bd-footer py-5 mt-5 bg-light">
+              <footer class="bd-footer py-5 mt-5 bg-dark">
                 <div class="container py-5">
                   <div class="row">
                     <div class="col-lg-3 mb-3">
-                      <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="Bootstrap">
+                      <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none"  aria-label="Bootstrap">
                         <!-- <svg xmlns="./images/" width="40" height="32" class="d-block me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg> -->
 
                         <img width="60" src="./images/food-logo.png" alt="">
-                        <span class="fs-5">Foodieo</span>
+                        <span class="fs-5 text-white mx-2">Foodieo</span>
                       </a>
                       <ul class="list-unstyled small text-muted">
-                        <li class="mb-2">Designed and built with all the love in the world by the <a href="/docs/5.0/about/team/">Bootstrap team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</li>
-                        <li class="mb-2">Code licensed <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE" target="_blank" rel="license noopener">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a>.</li>
-                        <li class="mb-2">Currently v5.0.2.</li>
+                        <li class="mb-2">We Ensure best quality products </li>
+                        <li class="mb-2">Cooked with love</li>
+                        <li class="mb-2">Serving since 2000</li>
                       </ul>
                     </div>
                     <div class="col-6 col-lg-2 offset-lg-1 mb-3">
-                      <h5>Links</h5>
+                      <h5 class="text-white">Food</h5>
                       <ul class="list-unstyled">
-                        <li class="mb-2"><a href="/">Home</a></li>
-                        <li class="mb-2"><a href="/docs/5.0/">Docs</a></li>
-                        <li class="mb-2"><a href="/docs/5.0/examples/">Examples</a></li>
-                        <li class="mb-2"><a href="https://themes.getbootstrap.com/">Themes</a></li>
-                        <li class="mb-2"><a href="https://blog.getbootstrap.com/">Blog</a></li>
+                        <li class="mb-2"><a href="./veg-main-course.html">veg-main-course</a></li>
+                        <li class="mb-2"><a href="./veg-starter.html">Veg-Starter</a></li>
+                        <li class="mb-2"><a href="./drinks.html">Drinks</a></li>
+                       
                       </ul>
                     </div>
                     <div class="col-6 col-lg-2 mb-3">
-                      <h5>Guides</h5>
+                      <h5 class="text-white">Contact us</h5>
                       <ul class="list-unstyled">
-                        <li class="mb-2"><a href="/docs/5.0/getting-started/">Getting started</a></li>
-                        <li class="mb-2"><a href="/docs/5.0/examples/starter-template/">Starter template</a></li>
-                        <li class="mb-2"><a href="/docs/5.0/getting-started/webpack/">Webpack</a></li>
-                        <li class="mb-2"><a href="/docs/5.0/getting-started/parcel/">Parcel</a></li>
+                      
+
+                        <li style="text-align: left;" class="list-item mb-2">
+                          <i class="fas fa-map-marker-alt text-white"></i>
+                          <a href="./contact-us.html">India, Delhi Shahdara 110032</a>
+                          
+                      </li>
+
+                      <li style="text-align:left;" class="list-item mb-2">
+                        <i class="fas fa-mobile-alt text-white"></i>
+                        <a href="tel: 8860024152"> 8860024152
+                        
+                    </li>
+
+                    <li style="text-align:left;" class=" list-item mb-2">
+                      <i class="fas fa-envelope text-white"></i>
+                      <a href="mailto:simerpreet2844@gmail.com"> Mail us</a>
+                  </li>
+
+
+
+
+
                       </ul>
                     </div>
                     <div class="col-6 col-lg-2 mb-3">
-                      <h5>Projects</h5>
+                      <h5 class="text-white">Our Outlets</h5>
                       <ul class="list-unstyled">
-                        <li class="mb-2"><a href="https://github.com/twbs/bootstrap">Bootstrap 5</a></li>
-                        <li class="mb-2"><a href="https://github.com/twbs/bootstrap/tree/v4-dev">Bootstrap 4</a></li>
-                        <li class="mb-2"><a href="https://github.com/twbs/icons">Icons</a></li>
-                        <li class="mb-2"><a href="https://github.com/twbs/rfs">RFS</a></li>
-                        <li class="mb-2"><a href="https://github.com/twbs/bootstrap-npm-starter">npm starter</a></li>
+                        <li class="mb-2">
+                        <a href="./karol-bagh.html">karol Bagh</a>
+                        </li>
+                        
+                        <li class="mb-2">
+                          <a href="lajpat.html">Lajpat Nagar</a>
+                          </li>
+                          
+
+                        <li class="mb-2"><a href="./contact-us.html">Main Head Office</a></li>
+                        
                       </ul>
                     </div>
                     <div class="col-6 col-lg-2 mb-3">
-                      <h5>Community</h5>
+                      <h5 class="text-white">policy</h5>
                       <ul class="list-unstyled">
-                        <li class="mb-2"><a href="https://github.com/twbs/bootstrap/issues">Issues</a></li>
-                        <li class="mb-2"><a href="https://github.com/twbs/bootstrap/discussions">Discussions</a></li>
-                        <li class="mb-2"><a href="https://github.com/sponsors/twbs">Corporate sponsors</a></li>
-                        <li class="mb-2"><a href="https://opencollective.com/bootstrap">Open Collective</a></li>
-                        <li class="mb-2"><a href="https://bootstrap-slack.herokuapp.com/">Slack</a></li>
-                        <li class="mb-2"><a href="https://stackoverflow.com/questions/tagged/bootstrap-5">Stack Overflow</a></li>
+                        <li class="mb-2"><a href="./policy.html">Our Policy</a></li>
+                  
                       </ul>
                     </div>
                   </div>
                 </div>
               </footer>
+
+              <!-- footer ends here -->
 
 </body>
 
